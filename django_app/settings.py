@@ -30,6 +30,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+ALLOWED_HOSTS = ["my_website_url", "127.0.0.1", "*.onrender.com", "django-app-05if.onrender.com"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://example.com",
+    'https://127.0.0.1',
+    'https://django-app-05if.onrender.com'
+]
 # Application definition
 
 INSTALLED_APPS = [
